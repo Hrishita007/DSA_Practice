@@ -1,4 +1,4 @@
-//Maximum size suarray sum
+//Maximum size subarray sum
 public class leetcode209 {
     public int maxSubArrayLen(int[] nums, int k) {
         if (nums == null || nums.length == 0) {
