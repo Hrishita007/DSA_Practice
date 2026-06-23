@@ -1,4 +1,4 @@
-class leetode643 {
+class leetcode643 {
     public double findMaxAverage(int[] nums, int k) {
 
         int sum = 0;
