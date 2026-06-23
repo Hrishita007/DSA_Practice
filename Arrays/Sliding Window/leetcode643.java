@@ -19,7 +19,7 @@ class leetcode643 {
         return (double)maxSum / k;
     }
     public static void main(String[] args) {
-        leetode643 obj = new leetode643();
+        leetcode643 obj = new leetcode643();
         int[] nums = {1,12,-5,-6,50,3};
         int k = 4;
         System.out.println(obj.findMaxAverage(nums, k));
