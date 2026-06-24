@@ -1,4 +1,5 @@
 //minimum substring window
+import java.util.HashMap;
 class leetcode76 {
 
     public String minWindow(String s, String t) {
