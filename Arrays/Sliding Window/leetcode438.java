@@ -33,5 +33,12 @@ class leetcode438 {
         }
         return ans;
     }
+    public static void main(String[] args) {
+        leetcode438 solution = new leetcode438();
+        String s = "cbaebabacd";
+        String p = "abc";
+        List<Integer> result = solution.findAnagrams(s, p);
+        System.out.println(result); // Output: [0, 6]
+    }
 }
 
