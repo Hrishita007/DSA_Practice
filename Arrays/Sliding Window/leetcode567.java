@@ -59,3 +59,43 @@ public class leetcode567 {
         System.out.println(result); // Output: true
     }
 }
+
+
+//optimal for lowercase using int[26] instead of hashmap
+// class Solution {
+//     public boolean checkInclusion(String s1, String s2) {
+
+//         int k = s1.length();
+//         int n = s2.length();
+
+//         if(k > n) {
+//             return false;
+//         }
+
+//        int[] target=new int[26];
+
+//         for(char ch : s1.toCharArray()) {
+//             target[ch-'a']++;
+//         }
+
+//        int[] window=new int[26];
+//         for(int r = 0; r < n; r++) {
+
+//             window[s2.charAt(r) - 'a']++;
+
+//             if(r >= k) {
+
+//                 window[s2.charAt(r - k)-'a']--;
+//             }
+
+//             if(r >= k - 1) {
+
+//                 if(Arrays.equals(target,window)) {
+//                     return true;
+//                 }
+//             }
+//         }
+
+//         return false;
+//     }
+// }
