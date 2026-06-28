@@ -32,3 +32,19 @@ class leetcode303 {
  * leetcode303 obj = new leetcode303(nums);
  * int param_1 = obj.sumRange(left,right);
  */
+// class NumArray {
+//     int[] prefix;
+
+//     public NumArray(int[] nums) {
+//         prefix = new int[nums.length+1];
+
+//         for(int i=0;i<nums.length;i++){
+//             prefix[i+1]=prefix[i]+nums[i];
+//         }
+//     }
+    
+//     public int sumRange(int left, int right) {
+//             return prefix[right+1]-prefix[left]; 
+        
+//     }
+// }
