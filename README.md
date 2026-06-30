@@ -10,7 +10,7 @@ This repo is basically my DSA practice playground. I keep adding questions + pat
 ### 1) Clone
 ```bash
 git clone <your-repo-url>
-cd JAVA-DSA
+cd DSA_Practice
 ```
 
 ### 2) Run Java files
