@@ -20,7 +20,7 @@ class leetcode134 {
         }
         return start;        
     }
-    piblic static void main(String[] args) {
+    public static void main(String[] args) {
         leetcode134 solution = new leetcode134();
         int[] gas = {1,2,3,4,5};
         int[] cost = {3,4,5,1,2};
