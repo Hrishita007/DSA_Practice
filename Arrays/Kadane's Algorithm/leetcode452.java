@@ -24,4 +24,10 @@ class leetcode452 {
 
         return arrows;
     }
+    public static void main(String[] args) {
+        leetcode452 solution = new leetcode452();
+        int[][] points = {{10,16},{2,8},{1,6},{7,12}};
+        int result = solution.findMinArrowShots(points);
+        System.out.println("Minimum number of arrows needed: " + result); // Output: 2
+    }
 }
