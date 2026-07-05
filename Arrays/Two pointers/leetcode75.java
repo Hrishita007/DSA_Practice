@@ -1,4 +1,5 @@
 //sort colors dutch national flag problem
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode75 {
     private void swap(int[] nums, int i, int j) {
 

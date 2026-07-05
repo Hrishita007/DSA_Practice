@@ -1,4 +1,5 @@
 //3sum
+// Time Complexity: O(n^2), Space Complexity: O(n^2) (for output sets)
 import java.util.*;
 
 class leetcode15 {

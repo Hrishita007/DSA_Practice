@@ -1,4 +1,5 @@
 //two sum problem
+// Time Complexity: O(n), Space Complexity: O(n)
 import java.util.HashMap;
 
 class leetcode1 {

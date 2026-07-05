@@ -1,4 +1,5 @@
 //4 sum
+// Time Complexity: O(n^3), Space Complexity: O(output) 
 import java.util.*;
 public class leetcode18 {
     public List<List<Integer>> fourSum(int[] nums, int target) {

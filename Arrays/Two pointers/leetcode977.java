@@ -1,10 +1,12 @@
 //Squares of a Sorted Array
+// Time Complexity: O(n), Space Complexity: O(n) (output array)
 class leetcode977 {
     public int[] sortedSquares(int[] nums) {
         int n = nums.length;
         int[] res = new int[n];
 
         int l = 0;
+
         int r = n - 1;
 
         for (int i = n - 1; i >= 0; i--) {

@@ -1,4 +1,5 @@
 //Remove Duplicates from Sorted Array
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode26 {
     public int removeDuplicates(int[] nums) {
         int s=0,f=0;

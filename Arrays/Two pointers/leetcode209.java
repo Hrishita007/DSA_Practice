@@ -1,4 +1,5 @@
 //minimum size subarray sum
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode209 {
     public int minSubArrayLen(int target, int[] nums) {
         int l=0,r=0,sum=0,minlen=Integer.MAX_VALUE;
