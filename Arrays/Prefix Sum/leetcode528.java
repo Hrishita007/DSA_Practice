@@ -1,4 +1,5 @@
 //random pick index with weight
+// Time Complexity: O(n) preprocess, O(log n) per pickIndex, Space Complexity: O(n)
 class leetcode528 {
     int[] prefix;
     int totalsum;

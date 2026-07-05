@@ -1,4 +1,5 @@
 //minimum operations to reduce x to zero
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode1658 {
     public int minOperations(int[] nums, int x) {
         int l=0;

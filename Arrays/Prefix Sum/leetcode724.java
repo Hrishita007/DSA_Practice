@@ -1,4 +1,5 @@
 //find the pivot index of an array
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode724 {
     public int pivotIndex(int[] nums) {
         int total=0;

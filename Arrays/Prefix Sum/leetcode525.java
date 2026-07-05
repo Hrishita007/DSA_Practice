@@ -1,4 +1,5 @@
 //maximum length of Subarrays with Equal 0s and 1s
+// Time Complexity: O(n), Space Complexity: O(n)
 import java.util.HashMap;
 class leetcode525 {
     public int findMaxLength(int[] nums) {

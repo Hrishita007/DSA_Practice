@@ -1,4 +1,5 @@
 //continuous subarray sum equals k
+// Time Complexity: O(n), Space Complexity: O(n)
 import java.util.HashMap;
 class leetcode523 {
     public boolean checkSubarraySum(int[] nums, int k) {

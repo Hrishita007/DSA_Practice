@@ -1,4 +1,5 @@
 //subarray sums divisible by k
+// Time Complexity: O(n), Space Complexity: O(n)
 import java.util.HashMap;
 class leetcode974 {
     public int subarraysDivByK(int[] nums, int k) {

@@ -1,4 +1,5 @@
 //running sum of 1d array
+// Time Complexity: O(n), Space Complexity: O(1) (ignoring output array) 
 import java.util.Arrays;
 class leetcode1480 {
     public int[] runningSum(int[] nums) {

@@ -1,4 +1,5 @@
 //Range Sum Query - Immutable
+// Time Complexity: O(n) for constructor, O(1) for sumRange, Space Complexity: O(n)
 class leetcode303 {
     int[] prefix;
 

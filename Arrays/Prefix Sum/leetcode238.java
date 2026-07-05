@@ -1,4 +1,5 @@
 //product of array except self
+// Time Complexity: O(n), Space Complexity: O(n)
 class leetcode238 {
     public int[] productExceptSelf(int[] nums) {
 

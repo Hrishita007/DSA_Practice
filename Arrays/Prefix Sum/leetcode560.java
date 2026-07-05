@@ -1,4 +1,5 @@
 //find the number of subarrays with sum equal to k
+// Time Complexity: O(n), Space Complexity: O(n)
 import java.util.HashMap;
 class leetcode560 {
     public int subarraySum(int[] nums, int k) {
