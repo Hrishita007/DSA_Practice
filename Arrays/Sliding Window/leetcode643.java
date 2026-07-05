@@ -1,4 +1,5 @@
 //Maximum Average Subarray I
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode643 {
     public double findMaxAverage(int[] nums, int k) {
 

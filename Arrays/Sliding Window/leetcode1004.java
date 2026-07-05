@@ -1,4 +1,5 @@
 //maximum consecutive ones III
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode1004 {
     public int longestOnes(int[] nums, int k) {
     int count = 0;

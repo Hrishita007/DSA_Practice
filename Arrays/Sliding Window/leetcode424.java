@@ -1,4 +1,5 @@
 //longest substring with same letters after replacement
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode424 {
     public int characterReplacement(String s, int k) {
         int[] freq = new int[26];

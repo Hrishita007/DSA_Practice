@@ -1,4 +1,5 @@
 //subarray product less than k
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode713 {
     public int numSubarrayProductLessThanK(int[] nums, int k) {
         int count=0,product=1,l=0;

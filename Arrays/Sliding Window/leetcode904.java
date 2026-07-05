@@ -1,4 +1,5 @@
 //fruits in the baskets
+// Time Complexity: O(n), Space Complexity: O(1) (at most 2 keys)
 import java.util.HashMap;
 class leetcode904 {
     public int totalFruit(int[] fruits) {

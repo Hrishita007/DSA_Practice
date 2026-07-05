@@ -62,6 +62,7 @@ public class leetcode567 {
 
 
 //optimal for lowercase using int[26] instead of hashmap
+// Time Complexity: O(n * 1) with fixed 26 compare, Space Complexity: O(1)
 // class Solution {
 //     public boolean checkInclusion(String s1, String s2) {
 

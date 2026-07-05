@@ -1,4 +1,5 @@
 //longest substring without repeating characters
+// Time Complexity: O(n), Space Complexity: O(min(n, k))
 import java.util.*;
 class leetcode3 {
     public int lengthOfLongestSubstring(String s) {

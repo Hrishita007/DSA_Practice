@@ -1,4 +1,5 @@
 //anagrams in a string
+// Time Complexity: O(n * 26) ~ O(n), Space Complexity: O(26)
 import java.util.*;
 class leetcode438 {
     public List<Integer> findAnagrams(String s, String p) {

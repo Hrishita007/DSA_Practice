@@ -1,4 +1,5 @@
 //Substring with Concatenation of All Words
+// Time Complexity: O(n * wordCount), Space Complexity: O(wordCount)
 import java.util.*;
 class leetcode30 {
     public List<Integer> findSubstring(String s, String[] words) {
