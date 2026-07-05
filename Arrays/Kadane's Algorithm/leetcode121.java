@@ -1,4 +1,5 @@
 //Best time to buy and sell stock(easy)
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode121 {
     public int maxProfit(int[] prices) {
         int minbuy=prices[0];

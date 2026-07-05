@@ -1,4 +1,5 @@
 //Candies
+// Time Complexity: O(n), Space Complexity: O(n)
 import java.util.Arrays;
 class Solution {
     public int candy(int[] ratings) {

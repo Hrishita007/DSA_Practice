@@ -1,4 +1,5 @@
 //Jump Game
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode55 {
     public boolean canJump(int[] nums) {
         int farthest=nums[0];

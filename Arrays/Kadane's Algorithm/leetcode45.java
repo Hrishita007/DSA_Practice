@@ -1,4 +1,5 @@
 //Jump Game II
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode45 {
     public int jump(int[] nums) {
         int jumps=0;

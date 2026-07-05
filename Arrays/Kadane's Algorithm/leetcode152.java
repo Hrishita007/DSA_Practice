@@ -1,4 +1,5 @@
 //maximum product subarray
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode152 {
     public int maxProduct(int[] nums) {
         int current = nums[0];

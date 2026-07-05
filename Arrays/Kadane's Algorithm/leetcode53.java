@@ -1,4 +1,5 @@
 //maximum subarray sum
+// Time Complexity: O(n), Space Complexity: O(1)
 class leetcode53 {
     public int maxSubArray(int[] nums) {
         int current=nums[0];

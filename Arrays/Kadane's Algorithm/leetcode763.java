@@ -1,4 +1,5 @@
 //Maximum number of partitions such that each letter appears in at most one part
+// Time Complexity: O(n), Space Complexity: O(1)
 import java.util.ArrayList;
 import java.util.List;
 class leetcode763 {
