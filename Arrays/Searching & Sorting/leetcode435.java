@@ -1,4 +1,6 @@
 //Non-overlapping Intervals
+//time complexity: O(nlogn) for sorting and O(n) for checking overlaps, so overall O(nlogn)
+//space complexity: O(1)
 import java.util.*;
 class leetcode435 {
     public int eraseOverlapIntervals(int[][] intervals) {
