@@ -27,3 +27,39 @@ class leetcode49 {
         System.out.println("Grouped Anagrams: " + result);
     }
 }
+
+// //optimization
+// class Solution {
+//     public List<List<String>> groupAnagrams(String[] strs) {
+
+//         Map<String, List<String>> map = new HashMap<>();
+
+//         for (String word : strs) {
+
+//             int[] freq = new int[26];
+
+//             // Count character frequencies
+//             for (char ch : word.toCharArray()) {
+//                 freq[ch - 'a']++;
+//             }
+
+//             // Convert frequency array into a unique String key
+//             StringBuilder sb = new StringBuilder();
+
+//             for (int count : freq) {
+//                 sb.append(count);
+//                 sb.append('#');
+//             }
+
+//             String key = sb.toString();
+
+//             if (!map.containsKey(key)) {
+//                 map.put(key, new ArrayList<>());
+//             }
+
+//             map.get(key).add(word);
+//         }
+
+//         return new ArrayList<>(map.values());
+//     }
+// }
