@@ -54,3 +54,10 @@ class leetcode402 {
         System.out.println(obj.removeKdigits(num,k));
     }
 }
+
+// Example usage
+// Input: num = "1432219", k = 3    
+// Output: "1219"
+// Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.
+// Input: num = "10200", k = 1
+// Output: "200"
