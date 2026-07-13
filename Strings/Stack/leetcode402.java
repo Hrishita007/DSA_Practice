@@ -43,4 +43,10 @@ class leetcode402 {
 
         return sb.toString();
     }
+    public static void main(String[] args) {
+        leetcode402 obj=new leetcode402();
+        String num="1432219";
+        int k=3;
+        System.out.println(obj.removeKdigits(num,k));
+    }
 }
