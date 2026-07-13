@@ -1,4 +1,4 @@
-class Solution {
+class leetcode402 {
     public String removeKdigits(String num, int k) {
 
         Stack<Character> stack = new Stack<>();
