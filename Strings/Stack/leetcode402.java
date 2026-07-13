@@ -1,3 +1,7 @@
+//remove k digits from the number to make it the smallest possible
+//time complexity: O(n)
+//space complexity: O(n)
+import java.util.*;
 class leetcode402 {
     public String removeKdigits(String num, int k) {
 
