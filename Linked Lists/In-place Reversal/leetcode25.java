@@ -1,6 +1,6 @@
 //Reverse k nodes in a linked list
 //Time Complexity: O(n)
-//Space Complexity: O(1)
+//Space Complexity: O(1)---O(n/k) for recursive stack spacep
 class ListNode {
     int val;
     ListNode next;
