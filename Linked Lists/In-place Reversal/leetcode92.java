@@ -44,4 +44,23 @@ class leetcode92 {
         revstart.next=cur;
         return head;
     }
+    public static void main(String[] args) {
+        leetcode92 obj = new leetcode92();
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+
+        int left = 2;
+        int right = 4;
+
+        ListNode reversedHead = obj.reverseBetween(head, left, right);
+
+        // Print reversed linked list
+        while (reversedHead != null) {
+            System.out.print(reversedHead.val + " ");
+            reversedHead = reversedHead.next;
+        }
+    }
 }
