@@ -63,3 +63,55 @@ class leetcode25 {
         }
     }
 }
+
+// //Iterative method(optimal with O(1)space complexity)
+// class Solution {
+//     public ListNode reverseKGroup(ListNode head, int k) {
+
+//         ListNode dummy = new ListNode(0);
+//         dummy.next = head;
+
+//         ListNode prevGroupTail = dummy;
+
+//         while (true) {
+
+//             // Find kth node
+//             ListNode kth = prevGroupTail;
+
+//             for (int i = 0; i < k && kth != null; i++) {
+//                 kth = kth.next;
+//             }
+
+//             // Not enough nodes left
+//             if (kth == null)
+//                 break;
+
+//             // Store important pointers before changing links
+//             ListNode groupHead = prevGroupTail.next;
+//             ListNode groupNext = kth.next;
+
+//             // Reverse k nodes (same as LC206)
+//             ListNode curr = groupHead;
+//             ListNode prev = groupNext;
+
+//             while (curr != groupNext) {
+
+//                 ListNode next = curr.next;
+
+//                 curr.next = prev;
+
+//                 prev = curr;
+
+//                 curr = next;
+//             }
+
+//             // Connect previous group with reversed group
+//             prevGroupTail.next = prev;
+
+//             // Move to the tail of the reversed group
+//             prevGroupTail = groupHead;
+//         }
+
+//         return dummy.next;
+//     }
+// }
