@@ -1,6 +1,7 @@
 //Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 //time complexity: O(n+m) where n and m are the lengths of the two lists
 //space complexity: O(1)
+
 class ListNode {
     int val;
     ListNode next;
@@ -63,3 +64,9 @@ class leetcode21 {
         }
     }
 }
+
+// | Approach                     | Time           | Space        | Interview Level |
+// | ---------------------------- | -------------- | ------------ | --------------- |
+// | Array + Sort                 | O(N log N)     | O(N)         | Brute force     |
+// | Sequential LC21 Merge        | O(kN)          | O(1)         | Better          |
+
