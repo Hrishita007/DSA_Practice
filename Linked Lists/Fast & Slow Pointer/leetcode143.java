@@ -43,11 +43,11 @@ class leetcode143 {
             ListNode firstNext = first.next;
             ListNode secondNext = second.next;
 
-            first.next = second;
-            second.next = firstNext;
+            first.next = second;        // put second node after first
+            second.next = firstNext;    // reconnect remaining first list
 
-            first = firstNext;
-            second = secondNext;
+            first = firstNext;          // move first pointer
+            second = secondNext;        // move second pointer
         }
     }
 
