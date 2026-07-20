@@ -79,6 +79,8 @@ public class leetcode160 {
 }
 
 // //pointer switching method
+//time complexity: O(n) where n is the length of the longer list
+//space complexity: O(1)
 
 // public class Solution {
 //     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
