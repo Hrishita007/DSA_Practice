@@ -14,13 +14,13 @@ class leetcode75 {
             swap(nums,low,mid);
             low++;
             mid++;
-        }
-        else if(nums[mid]==1){
+            }
+            else if(nums[mid]==1){
             mid++;
-        }
-        else{
-            swap(nums,mid,high);
-            high--;
+            }
+            else{
+                swap(nums,mid,high);
+                high--;
             }
         }
     }
