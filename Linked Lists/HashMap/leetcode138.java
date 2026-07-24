@@ -1,20 +1,16 @@
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {}
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class Solution {
+import java.util.HashMap;
+class Node {
+     int val;
+     Node next;
+     Node random;
+ 
+      public Node(int val) {
+         this.val = val;
+         this.next = null;
+         this.random = null;
+      }
+ }
+class leetcode138 {
     public Node copyRandomList(Node head) {
 
         if (head == null)
@@ -46,5 +42,29 @@ class Solution {
         }
 
         return map.get(head);
+    }
+    public static void main(String[] args) {
+        leetcode138 obj = new leetcode138();
+
+        // Create a linked list with random pointers
+        Node head = new Node(1);
+        head.next = new Node(2);
+        head.random = head.next; // 1's random points to 2
+        head.next.random = head; // 2's random points to 1
+
+        Node copiedList = obj.copyRandomList(head);
+
+        // Print the copied list
+        Node curr = copiedList;
+        while (curr != null) {
+            System.out.print("Node val: " + curr.val);
+            if (curr.random != null) {
+                System.out.print(", Random points to: " + curr.random.val);
+            } else {
+                System.out.print(", Random points to: null");
+            }
+            System.out.println();
+            curr = curr.next;
+        }
     }
 }
