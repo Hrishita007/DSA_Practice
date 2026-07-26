@@ -1,4 +1,6 @@
 //Copy list with random pointer
+//time complexity: O(n)
+//space complexity: O(1)
 class Node {
     int val;
     Node next;
@@ -40,5 +42,30 @@ class leetcode138 {
             }
         }
         return newHead;
+    }
+    public static void main(String[] args) {
+        leetcode138 obj = new leetcode138();
+        Node head = new Node(1);
+        head.next = new Node(2);
+        head.random = head.next;
+        head.next.random = head;
+        Node copiedList = obj.copyRandomList(head);
+        System.out.println("Original List: ");
+        printList(head);
+        System.out.println("Copied List: ");
+        printList(copiedList);
+    }
+    public static void printList(Node head) {
+        Node curr = head;
+        while (curr != null) {
+            System.out.print("Node val: " + curr.val);
+            if (curr.random != null) {
+                System.out.print(", Random points to: " + curr.random.val);
+            } else {
+                System.out.print(", Random points to: null");
+            }
+            System.out.println();
+            curr = curr.next;
+        }
     }
 }
