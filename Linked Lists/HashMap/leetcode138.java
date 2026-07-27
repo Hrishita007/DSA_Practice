@@ -169,3 +169,8 @@ class leetcode138 {
 //         printList(copied);
 //     }
 // }
+
+//explanation: The first implementation of the `copyRandomList` method creates a deep copy 
+// of a linked list with random pointers in O(n) time and O(1) space. It does this by interleaving
+//  the original and copied nodes, setting the random pointers, and then 
+// separating the two lists.
