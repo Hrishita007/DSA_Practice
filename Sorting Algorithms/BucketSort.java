@@ -37,5 +37,11 @@ public class BucketSort {
             }
         }
     }
+    public static void main(String[] args) {
+        int[] arr = {4, 2, 2, 8, 3, 3, 1};
+        System.out.println("Original: " + Arrays.toString(arr));
+        bucketSort(arr, 5); // Using 5 buckets
+        System.out.println("Sorted:   " + Arrays.toString(arr));
+    }
     
 }
