@@ -2,7 +2,11 @@
 //  Each bucket is then sorted individually, either using a different sorting algorithm or 
 // by recursively applying the bucket sort algorithm.
 //time complexity: O(n + k) where n is the number of elements and k is the number of buckets
+//average case: O(n + k) where n is the number of elements and k is the number of buckets
+//best case: O(n + k) where n is the number of elements and k is the number of buckets
+//worst case: O(n^2) when all elements are in the same bucket
 //space complexity: O(n + k) where n is the number of elements and k is the number of buckets
+
 import java.util.*;
 public class BucketSort {
     public static void bucketSort(int[] arr, int numBuckets) {
