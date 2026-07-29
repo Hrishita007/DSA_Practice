@@ -1,3 +1,4 @@
+package Arrays.Greedy;
 //lemonade-change(vending-machine)
 //time complexity: O(n)
 //space complexity: O(1)
