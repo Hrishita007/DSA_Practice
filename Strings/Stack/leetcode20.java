@@ -32,6 +32,7 @@ class leetcode20 {
 }
 
 // //another way
+// class leetcode20 {
 // public boolean isValid(String s) {
 //     Stack<Character> st = new Stack<>();
 
@@ -50,5 +51,11 @@ class leetcode20 {
 //     }
 
 //     return st.isEmpty();
-// }
+//     }
+//     public static void main(String[] args){
+//         leetcode20 obj=new leetcode20();
+//         String s="()[]{}";
+//         System.out.println(obj.isValid(s));
+//     }
+// } 
  
