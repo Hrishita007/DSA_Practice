@@ -29,32 +29,43 @@
 // }
 
 //fibonacci series using dynamic programming
+//time complexity: O(n)
+//space complexity: O(n)
 import java.util.Scanner;
+
 public class Fibonacci {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter the number of terms: ");
-        long n = sc.nextLong();
+        int n = sc.nextInt();
+
         System.out.println("Fibonacci series:");
-        for (long i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.print(fibonacci(i) + " ");
         }
-        //print the nth fibonacci number
+
         System.out.print("\nEnter the position of the Fibonacci number to find: ");
-        long p = sc.nextLong();
+        int p = sc.nextInt();
+
         System.out.println("The Fibonacci number at position " + p + " is: " + fibonacci(p));
+
+        sc.close();
     }
 
-    public static long fibonacci(long n) {
+    public static long fibonacci(int n) {
         if (n <= 1) {
             return n;
         }
-        long[] fib = new long[(int) n + 1];
+
+        long[] fib = new long[n + 1];
         fib[0] = 0;
         fib[1] = 1;
-        for (long i = 2; i <= n; i++) {
+
+        for (int i = 2; i <= n; i++) {
             fib[i] = fib[i - 1] + fib[i - 2];
         }
+
         return fib[n];
     }
 }
