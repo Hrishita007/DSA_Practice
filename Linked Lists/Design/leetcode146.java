@@ -90,4 +90,17 @@ class leetcode146 {
             map.put(key, newNode);
         }
     }
+    public static void main(String[] args) {
+        leetcode146 lruCache = new leetcode146(2);
+
+        lruCache.put(1, 1);
+        lruCache.put(2, 2);
+        System.out.println(lruCache.get(1)); // returns 1
+        lruCache.put(3, 3); // evicts key 2
+        System.out.println(lruCache.get(2)); // returns -1 (not found)
+        lruCache.put(4, 4); // evicts key 1
+        System.out.println(lruCache.get(1)); // returns -1 (not found)
+        System.out.println(lruCache.get(3)); // returns 3
+        System.out.println(lruCache.get(4)); // returns 4
+    }
 }
