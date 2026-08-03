@@ -28,7 +28,7 @@
 //     }
 // }
 
-//fibonacci series using dynamic programming
+//fibonacci series using dynamic programming tabulation
 //time complexity: O(n)
 //space complexity: O(n)
 import java.util.Scanner;
@@ -69,4 +69,43 @@ public class Fibonacci {
         return fib[n];
     }
 }
+
+//fibonacci series using dynamic programming memoization
+//time complexity: O(n)
+//space complexity: O(n)
+// import java.util.Scanner;
+// public class Fibonacci {
+//     private static long[] memo;
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.print("Enter the number of terms: ");
+//         int n = sc.nextInt();
+
+//         memo = new long[n + 1];
+//         System.out.println("Fibonacci series:");
+//         for (int i = 0; i < n; i++) {
+//             System.out.print(fibonacci(i) + " ");
+//         }
+
+//         System.out.print("\nEnter the position of the Fibonacci number to find: ");
+//         int p = sc.nextInt();
+
+//         System.out.println("The Fibonacci number at position " + p + " is: " + fibonacci(p));
+
+//         sc.close();
+//     }
+
+//     public static long fibonacci(int n) {
+//         if (n <= 1) {
+//             return n;
+//         }
+//         if (memo[n] != 0) {
+//             return memo[n];
+//         }
+//         memo[n] = fibonacci(n - 1) + fibonacci(n - 2);
+//         return memo[n];
+//     }
+// } 
 
