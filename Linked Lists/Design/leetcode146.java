@@ -1,30 +1,32 @@
-//Leetcode 146: LRU Cache
-// Time Complexity : O(1) for both get and put operations
-// Space Complexity : O(capacity) for storing the cache
+//LRU Cache
+//time complexity: O(1) for get and put operations
+//space complexity: O(capacity) for storing the cache entries
 import java.util.HashMap;
-
-class leetcode146 {
+class LRUCache {
 
     class Node {
-        int key, value;
-        Node prev, next;
-
+        int key;
+        int value;
+        Node prev;
+        Node next;
         Node(int key, int value) {
             this.key = key;
             this.value = value;
         }
     }
 
-    private int capacity;
-    private HashMap<Integer, Node> map;
-    private Node head, tail;
+    HashMap<Integer, Node> map;
 
-    public leetcode146(int capacity) {
+    Node head;
+    Node tail;
 
+    int capacity;
+
+    public LRUCache(int capacity) {
         this.capacity = capacity;
+
         map = new HashMap<>();
 
-        // Dummy nodes
         head = new Node(0, 0);
         tail = new Node(0, 0);
 
@@ -32,16 +34,12 @@ class leetcode146 {
         tail.prev = head;
     }
 
-    // Remove a node from the linked list
     private void remove(Node node) {
-
         node.prev.next = node.next;
         node.next.prev = node.prev;
     }
 
-    // Insert a node just before tail (Most Recently Used)
     private void insert(Node node) {
-
         node.prev = tail.prev;
         node.next = tail;
 
@@ -63,44 +61,40 @@ class leetcode146 {
     }
 
     public void put(int key, int value) {
-
-        if (map.containsKey(key)) {
-
-            Node node = map.get(key);
-
-            node.value = value;
-
+        if(capacity==0)  return;
+        if(map.containsKey(key)){
+            Node node=map.get(key);
+            node.value=value;
             remove(node);
             insert(node);
-
-        } else {
-
-            if (map.size() == capacity) {
-
+        }else {
+            if(map.size()==capacity){
                 Node lru = head.next;
-
                 remove(lru);
                 map.remove(lru.key);
             }
-
             Node newNode = new Node(key, value);
-
             insert(newNode);
-
             map.put(key, newNode);
         }
     }
     public static void main(String[] args) {
-        leetcode146 lruCache = new leetcode146(2);
-
-        lruCache.put(1, 1);
-        lruCache.put(2, 2);
-        System.out.println(lruCache.get(1)); // returns 1
-        lruCache.put(3, 3); // evicts key 2
-        System.out.println(lruCache.get(2)); // returns -1 (not found)
-        lruCache.put(4, 4); // evicts key 1
-        System.out.println(lruCache.get(1)); // returns -1 (not found)
-        System.out.println(lruCache.get(3)); // returns 3
-        System.out.println(lruCache.get(4)); // returns 4
+        LRUCache cache = new LRUCache(2);
+        cache.put(1, 1);
+        cache.put(2, 2);
+        System.out.println(cache.get(1));       // returns 1
+        cache.put(3, 3);    // evicts key 2
+        System.out.println(cache.get(2));       // returns -1 (not found)
+        cache.put(4, 4);    // evicts key 1
+        System.out.println(cache.get(1));       // returns -1 (not found)
+        System.out.println(cache.get(3));       // returns 3
+        System.out.println(cache.get(4));       // returns 4
     }
 }
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */
