@@ -52,7 +52,7 @@ class QueueLL {
     }
 }
 
-public class Main {
+public class QueueLink{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -73,3 +73,42 @@ public class Main {
         sc.close();
     }
 }
+
+
+// Inferred Question
+
+// Implement a Queue using a Linked List that supports the following operations:
+
+// ENQUEUE x: Insert an element x at the rear of the queue.
+// DISPLAY: Print all elements of the queue from front to rear separated by spaces. If the queue is empty, print "Queue is empty".
+// Approach
+// Create a Node class containing:
+// data (stores the value)
+// next (pointer to the next node)
+// Maintain two pointers:
+// front → points to the first element.
+// rear → points to the last element.
+// Enqueue
+// Create a new node with the given value.
+// If the queue is empty (rear == null):
+// Set both front and rear to the new node.
+// Otherwise:
+// Link the current rear to the new node.
+// Move rear to the new node.
+// Display
+// If front == null, print "Queue is empty".
+// Otherwise, traverse the linked list from front to rear.
+// Print each node's value separated by spaces.
+
+// Overall Time Complexity: O(n)
+// enqueue() is O(1).
+// display() traverses all n elements, so it is O(n).
+// Since the most expensive operation is display(), the overall time complexity is O(n).
+// Overall Space Complexity: O(n)
+// The queue stores n nodes in the linked list.
+// Apart from these nodes, only a few pointers (front, rear, temp) are used, which take O(1) extra space.
+// Therefore, the overall space complexity is O(n).
+
+
+// Overall Time Complexity: O(n)
+// Overall Space Complexity: O(n)
