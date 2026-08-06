@@ -1,3 +1,4 @@
+//queue using linked list
 import java.util.Scanner;
 
 class QueueLL {
