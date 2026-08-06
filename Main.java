@@ -1,3 +1,6 @@
+//circular queue using array
+// Overall Time Complexity: O(1)
+// Overall Space Complexity: O(N)
 import java.util.Scanner;
 class MyQueue {
     private int capacity;
@@ -90,3 +93,16 @@ public class Main {
         sc.close();
     }
 }
+
+
+// Question
+
+// Implement a Queue using an Array (Circular Queue) with the following operations:
+
+// ENQUEUE x: Insert element x into the queue. If the queue is full, print "Queue is full".
+// DEQUEUE: Remove and print the front element. If the queue is empty, print "Queue is empty".
+// FRONT: Print the front element without removing it. If the queue is empty, print "Queue is empty".
+// IS_EMPTY: Print true if the queue is empty; otherwise print false.
+// IS_FULL: Print true if the queue is full; otherwise print false.
+
+// The queue should be implemented using a fixed-size circular array.
