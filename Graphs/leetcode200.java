@@ -53,3 +53,8 @@ private void dfs(char[][] grid, int i, int j) {
     }
 }  
 
+// The code defines a class `leetcode200` that contains a method `numIslands` to 
+// count the number of islands in a given 2D grid. An island is defined as a group 
+// of adjacent '1's (land) surrounded by '0's (water). 
+// The method uses Depth-First Search (DFS) to explore and mark visited land cells. 
+// The main method demonstrates how to use the `numIslands` method with a sample grid.
