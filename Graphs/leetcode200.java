@@ -1,3 +1,6 @@
+//number of islands
+//time complexity: O(m * n) where m is the number of rows and n is the number of columns in the grid
+//space complexity: O(m * n) in the worst case when the grid is filled with land
 package Graphs;
 
 public class leetcode200 {
