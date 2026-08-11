@@ -1,3 +1,5 @@
+package ASSESSMENTS;
+
 /* 1. Array Parity Problem
 
 Question:
