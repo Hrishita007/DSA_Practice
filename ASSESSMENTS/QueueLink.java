@@ -1,3 +1,5 @@
+package ASSESSMENTS;
+
 //queue using linked list
 import java.util.Scanner;
 
