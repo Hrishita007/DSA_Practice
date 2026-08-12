@@ -2,10 +2,9 @@
 import java.util.*;
 import java.io.*;
 
-class Solution {
+class Queuestack {
 
     public static List<Integer> reverseQueue(List<Integer> queue) {
-        // code here
         Stack<Integer> st=new Stack<>();
         while(!queue.isEmpty()){
           st.push(queue.remove(0));
