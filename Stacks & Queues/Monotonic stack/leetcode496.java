@@ -30,4 +30,11 @@ class leetcode496 {
 
         return ans;
     }
+    public static void main(String[] args) {
+        leetcode496 solution = new leetcode496();
+        int[] nums1 = {4, 1, 2};
+        int[] nums2 = {1, 3, 4, 2};
+        int[] result = solution.nextGreaterElement(nums1, nums2);
+        System.out.println(Arrays.toString(result)); // Output: [-1, 3, -1]
+    }
 }
