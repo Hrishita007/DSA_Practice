@@ -1,3 +1,6 @@
+//Next Greater Element I
+//time complexity: O(n)
+//space complexity: O(n)
 import java.util.HashMap;
 import java.util.Stack;
 class leetcode496 {
