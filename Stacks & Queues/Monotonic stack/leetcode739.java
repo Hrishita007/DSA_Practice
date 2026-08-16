@@ -19,4 +19,12 @@ class leetcode739 {
         }
         return ans;
     }
+    public static void main(String[] args) {
+        leetcode739 obj = new leetcode739();
+        int[] temperatures = {73, 74, 75, 71, 69, 72, 76, 73};
+        int[] result = obj.dailyTemperatures(temperatures);
+        for (int num : result) {
+            System.out.print(num + " ");
+        }
+    }
 }
