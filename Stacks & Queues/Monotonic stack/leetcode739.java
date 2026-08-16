@@ -15,7 +15,7 @@ class leetcode739 {
                 ans[previousIndex] = i - previousIndex;
             }
 
-            st.push(i);a
+            st.push(i);
         }
         return ans;
     }
