@@ -48,3 +48,4 @@ class leetcode84 {
         System.out.println(obj.largestRectangleArea(heights));
     }
 }
+
