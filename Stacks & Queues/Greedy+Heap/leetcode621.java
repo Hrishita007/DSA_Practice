@@ -48,4 +48,10 @@ class leetcode621 {
 
         return time;
     }
+    public static void main(String[] args) {
+        leetcode621 obj = new leetcode621();
+        char[] tasks = {'A', 'A', 'A', 'B', 'B', 'B'};
+        int n = 2;
+        System.out.println(obj.leastInterval(tasks, n)); // Output: 8
+    }
 }
