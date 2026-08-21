@@ -1,3 +1,6 @@
+//Task Scheduler
+//time complexity: O(nlogn)
+//space complexity: O(n)
 import java.util.*;
 
 class leetcode621 {
@@ -54,4 +57,5 @@ class leetcode621 {
         int n = 2;
         System.out.println(obj.leastInterval(tasks, n)); // Output: 8
     }
+
 }
