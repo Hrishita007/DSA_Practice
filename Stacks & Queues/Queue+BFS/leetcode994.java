@@ -64,4 +64,14 @@ class leetcode994 {
 
         return fresh == 0 ? time : -1;
     }
+     public static void main(String[] args) {
+        leetcode994 solution = new leetcode994();
+        int[][] grid = {
+            {2, 1, 1},
+            {1, 1, 0},
+            {0, 1, 1}
+        };
+        int result = solution.orangesRotting(grid);
+        System.out.println(result); // Output: 4
+    }
 }
