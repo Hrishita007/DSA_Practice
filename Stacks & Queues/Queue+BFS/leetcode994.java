@@ -75,3 +75,6 @@ class leetcode994 {
         System.out.println(result); // Output: 4
     }
 }
+
+//example input: [[2,1,1],[1,1,0],[0,1,1]]
+//example output: 4
