@@ -2,60 +2,40 @@
 //time complexity: O(nlogn)
 //space complexity: O(n)
 import java.util.*;
-
 class leetcode621 {
     public int leastInterval(char[] tasks, int n) {
-
-        int[] freq = new int[26];
-
-        for (char task : tasks) {
-            freq[task - 'A']++;
+        PriorityQueue<Integer> pq=
+        new PriorityQueue<>(Collections.reverseOrder());
+        int[] arr=new int[26];
+        for(char t:tasks){
+            arr[t-'A']++;
         }
-
-        PriorityQueue<Integer> pq =
-            new PriorityQueue<>(Collections.reverseOrder());
-
-        for (int f : freq) {
-            if (f > 0) {
-                pq.add(f);
+        for(int a:arr){
+            if(a>0){
+                pq.add(a);
             }
         }
-
-        int time = 0;
-
-        while (!pq.isEmpty()) {
-
-            List<Integer> temp = new ArrayList<>();
-
-            for (int i = 0; i <= n; i++) {
-
-                if (!pq.isEmpty()) {
-                    int count = pq.poll();
-
-                    if (count - 1 > 0) {
-                        temp.add(count - 1);
-                    }
+        int time=0;
+        while(!pq.isEmpty()){
+            List<Integer> temp=new ArrayList<>();
+            for(int i=0;i<n+1;i++){
+               if(!pq.isEmpty()){
+                int cnt=pq.poll();
+                cnt--;
+                if(cnt>0){
+                    temp.add(cnt);
                 }
-
-                time++;
-
-                if (pq.isEmpty() && temp.isEmpty()) {
-                    break;
+               }
+               time++; 
+               if(temp.isEmpty() && pq.isEmpty()){
+                break;
                 }
             }
-
-            for (int count : temp) {
-                pq.add(count);
+            for (int c : temp) {
+                pq.add(c);
             }
+            
         }
-
         return time;
     }
-    public static void main(String[] args) {
-        leetcode621 obj = new leetcode621();
-        char[] tasks = {'A', 'A', 'A', 'B', 'B', 'B'};
-        int n = 2;
-        System.out.println(obj.leastInterval(tasks, n)); // Output: 8
-    }
-
 }
