@@ -38,4 +38,11 @@ class leetcode621 {
         }
         return time;
     }
+    public static void main(String[] args) {
+        leetcode621 obj = new leetcode621();
+        char[] tasks = {'A', 'A', 'A', 'B', 'B', 'B'};
+        int n = 2;
+        int result = obj.leastInterval(tasks, n);
+        System.out.println("Minimum time required: " + result);
+    }
 }
