@@ -23,4 +23,11 @@ class leetcode144 {
 
         return -1;
     }
+    public static void main(String[] args) {
+        leetcode144 solution = new leetcode144();
+        int[] nums = {-1, 0, 3, 5, 9, 12};
+        int target = 9;
+        int result = solution.search(nums, target);
+        System.out.println("Index of target " + target + ": " + result);
+    }
 }
