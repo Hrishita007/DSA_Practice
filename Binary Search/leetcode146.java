@@ -26,4 +26,11 @@ class leetcode146 {
 
         return low;
     }
+    public static void main(String[] args) {
+        leetcode146 obj = new leetcode146();
+        int[] nums = {1, 3, 5, 6};
+        int target = 5;
+        int result = obj.searchInsert(nums, target);
+        System.out.println("The index of the target is: " + result);
+    }
 }
