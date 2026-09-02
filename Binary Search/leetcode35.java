@@ -1,7 +1,7 @@
 //search insert position
 //time complexity: O(log n)
 //space complexity: O(1)
-class leetcode146 {
+class leetcode35 {
     public int searchInsert(int[] nums, int target) {
 
         int low = 0;
@@ -27,7 +27,7 @@ class leetcode146 {
         return low;
     }
     public static void main(String[] args) {
-        leetcode146 obj = new leetcode146();
+        leetcode35 obj = new leetcode35();
         int[] nums = {1, 3, 5, 6};
         int target = 5;
         int result = obj.searchInsert(nums, target);

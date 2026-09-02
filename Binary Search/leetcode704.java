@@ -1,4 +1,4 @@
-class leetcode144 {
+class leetcode704 {
     public int search(int[] nums, int target) {
         
         int low = 0;
@@ -24,7 +24,7 @@ class leetcode144 {
         return -1;
     }
     public static void main(String[] args) {
-        leetcode144 solution = new leetcode144();
+        leetcode704 solution = new leetcode704();
         int[] nums = {-1, 0, 3, 5, 9, 12};
         int target = 9;
         int result = solution.search(nums, target);
