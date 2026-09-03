@@ -16,3 +16,11 @@ public abstract class Absnon {
 //         System.out.println("This is a default method in an interface.");
 //     }
 // }
+
+//example of a class extending the abstract class
+class ConcreteClass extends Absnon {
+    @Override
+    public void abstractMethod() {
+        System.out.println("Implementation of the abstract method.");
+    }
+}
