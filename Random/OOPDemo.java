@@ -1,4 +1,5 @@
 //oop demo
+//encapsulation, inheritance, polymorphism, abstraction
 abstract class Animal {
     private String name;
 
